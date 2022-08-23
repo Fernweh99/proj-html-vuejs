@@ -35,17 +35,20 @@ export default {
 
 <style lang="scss">
   button {
-    padding: 7px 20px;
+    padding: 10px 30px;
     &.general{
-      background-color: #40bece;
+      text-transform: uppercase;
+      background-color: #3cb0c0;
       color: white;
-      border-radius: 5px;
-      border: 1px solid black;
+      border-radius: 2px;
+      border: 1px solid rgb(116, 115, 115);
     }&.base-black{
+      text-transform: uppercase;
       background-color: transparent;
       border: 2px solid black;
       color: black;
     }&.base-white{
+      text-transform: uppercase;
       background-color: transparent;
       border: 2px solid white;
       color: white;
