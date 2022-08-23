@@ -1,16 +1,22 @@
 <template>
   <div>
     <TheHeader :headerNavbar="headerNavbar"/>
-    <TheMain/>
+    <TheMain 
+    :avadaHealthCards="avadaHealthCards"
+    />
     <TheFooter/>
   </div>
 </template>
 
 <script>
+//import Component
 import TheHeader from './components/TheHeader.vue';
 import TheMain from './components/TheMain.vue';
 import TheFooter from './components/TheFooter.vue';
+
+//import Data
 import _headerNavbar from './assets/data/_headerNavbar';
+import _avadaHealthCards from './assets/data/_avadaHealthCards';
 
 export default {
   name: 'App',
@@ -22,6 +28,7 @@ export default {
   data() {
     return {
       headerNavbar: _headerNavbar,
+      avadaHealthCards: _avadaHealthCards,
     }
   }
 }
