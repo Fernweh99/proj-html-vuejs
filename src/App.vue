@@ -3,6 +3,7 @@
     <TheHeader :headerNavbar="headerNavbar"/>
     <TheMain 
     :avadaHealthCards="avadaHealthCards"
+    :doctorsCards="doctorsCards"
     />
     <TheFooter/>
   </div>
@@ -17,6 +18,7 @@ import TheFooter from './components/TheFooter.vue';
 //import Data
 import _headerNavbar from './assets/data/_headerNavbar';
 import _avadaHealthCards from './assets/data/_avadaHealthCards';
+import _doctorsCards from './assets/data/_doctorsCards';
 
 export default {
   name: 'App',
@@ -29,6 +31,7 @@ export default {
     return {
       headerNavbar: _headerNavbar,
       avadaHealthCards: _avadaHealthCards,
+      doctorsCards: _doctorsCards,
     }
   }
 }
