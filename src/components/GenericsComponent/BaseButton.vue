@@ -1,7 +1,7 @@
 <template>
   <div>
     <button
-    :class="[{ 'general' : isGeneral },{ 'base-black' : isBaseBlack },{ 'base-white' : isBaseWhite}]">
+    :class="[{ 'general' : isGeneral },{ 'base-black' : isBaseBlack },{ 'base-white' : isBaseWhite},{'w-100' : (width === 'max')}]">
       {{ text }}
     </button>
   </div>
@@ -16,6 +16,9 @@ export default {
       required: true,
       },
     type: {
+      type: String,
+    },
+    width: {
       type: String,
     }
   },
