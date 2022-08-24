@@ -3,6 +3,7 @@
     <AvadaSectionMain :cards="avadaHealthCards"/>
     <DoctorsSectionMain :cards="doctorsCards"/>
     <HealthSectionMain :cards="healthServiceCards"/>
+    <FacilitiesSectionMain/>
   </main>
 </template>
 
@@ -10,7 +11,7 @@
 import AvadaSectionMain from './SectionComponent/AvadaSectionMain.vue'
 import DoctorsSectionMain from './SectionComponent/DoctorsSectionMain.vue';
 import HealthSectionMain from './SectionComponent/HealthSectionMain.vue';
-
+import FacilitiesSectionMain from './SectionComponent/FacilitiesSectionMain.vue';
 
 export default {
   name: 'TheMain',
@@ -18,6 +19,7 @@ export default {
     AvadaSectionMain,
     DoctorsSectionMain,
     HealthSectionMain,
+    FacilitiesSectionMain,
   },
   props: {
     avadaHealthCards: Array,
