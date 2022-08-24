@@ -5,6 +5,7 @@
     :avadaHealthCards="avadaHealthCards"
     :doctorsCards="doctorsCards"
     :healthServiceCards="healthServiceCards"
+    :learnMoreCards="learnMoreCards"
     />
     <TheFooter/>
   </div>
@@ -21,6 +22,7 @@ import _headerNavbar from './assets/data/_headerNavbar';
 import _avadaHealthCards from './assets/data/_avadaHealthCards';
 import _doctorsCards from './assets/data/_doctorsCards';
 import _healthServiceCards from './assets/data/_healthServiceCards';
+import _learnMoreCards from './assets/data/_learnMoreCards';
 
 export default {
   name: 'App',
@@ -35,6 +37,7 @@ export default {
       avadaHealthCards: _avadaHealthCards,
       doctorsCards: _doctorsCards,
       healthServiceCards: _healthServiceCards,
+      learnMoreCards: _learnMoreCards,
     }
   }
 }
