@@ -6,6 +6,7 @@
     <FacilitiesSectionMain/>
     <MoreCardsSectionMain :cards="learnMoreCards"/>
     <MakeAppointmentSectionMain/>
+    <BannerGradientSectionMain/>
   </main>
 </template>
 
@@ -16,6 +17,7 @@ import HealthSectionMain from './SectionComponent/HealthSectionMain.vue';
 import FacilitiesSectionMain from './SectionComponent/FacilitiesSectionMain.vue';
 import MoreCardsSectionMain from './SectionComponent/MoreCardsSectionMain.vue';
 import MakeAppointmentSectionMain from './SectionComponent/MakeAppointmentSectionMain.vue';
+import BannerGradientSectionMain from './SectionComponent/BannerGradientSectionMain.vue';
 
 export default {
   name: 'TheMain',
@@ -26,7 +28,8 @@ export default {
     FacilitiesSectionMain,
     MoreCardsSectionMain,
     MakeAppointmentSectionMain,
-  },
+    BannerGradientSectionMain,
+},
   props: {
     avadaHealthCards: Array,
     doctorsCards: Array,
