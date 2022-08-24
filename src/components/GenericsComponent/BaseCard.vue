@@ -22,5 +22,6 @@ export default {
     font-weight: 200;
   } p {
     font-size: 14px;
+    line-height: 30px;
   }
 </style>
