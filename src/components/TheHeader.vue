@@ -8,7 +8,7 @@
 
         <div class="col">
           <div class="d-flex justify-content-end align-items-center">
-            <a href="" v-for="link in headerNavbar" 
+            <a href="#" v-for="link in headerNavbar" 
             :key="link.name">
               <span v-if="link.type==='link'">{{link.name}}</span>
               <BaseButton v-else :text="link.name" type="general"/>
@@ -50,6 +50,7 @@ export default {
     background-image: url(../assets/img/header-image-homepage.jpg);
     nav {
       position: fixed;
+      background-color: #0000004f;
       top: 0;
       left: 0;
       width: 100%;
