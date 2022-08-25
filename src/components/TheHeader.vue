@@ -8,11 +8,16 @@
 
         <div class="col">
           <div class="d-flex justify-content-end align-items-center">
-            <a :href="'#'+link.href" v-for="link in headerNavbar" 
+            <a :href="link.href" v-for="(link, i) in headerNavbar" 
             :key="link.name">
-              <span v-if="link.type==='link'">{{link.name}}</span>
+              <span v-if="link.type==='link'" 
+              :class="[{'active' : (link.active==='true')}]"
+              @click="changeActive(i)"
+              >
+                {{link.name}}
+              </span>
               <BaseButton v-else :text="link.name" type="general"/>
-              </a>
+            </a>
           </div>
         </div>
       </nav>
@@ -40,7 +45,16 @@ export default {
   },
   props: {
     headerNavbar: Array,
-  }
+  },
+  methods: {
+    changeActive(i) {
+      this.headerNavbar.forEach((link) => {
+        link.active = false;
+      })
+      // eslint-disable-next-line
+      this.headerNavbar[i].active = 'true';
+    }
+  },
 }
 </script>
 
@@ -63,6 +77,10 @@ export default {
         margin: 0 15px;
         font-weight: 300;
         text-transform: uppercase;
+        .active {
+          color: $primary-color;
+          font-weight: 600;
+        }
       }
     }.content {
       color: white;
