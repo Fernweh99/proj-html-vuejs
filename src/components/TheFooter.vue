@@ -29,11 +29,19 @@
             <h3>MEDICAL DEPARTMENTS</h3>
             <div class="_hr"></div>
             <div class="mb-5">
-              <div class="cont-link-depart"><i class="fa-solid fa-circle-chevron-right"></i><span>Cardiology</span></div>
-              <div class="cont-link-depart"><i class="fa-solid fa-circle-chevron-right"></i><span>Pediactrics</span></div>
-              <div class="cont-link-depart"><i class="fa-solid fa-circle-chevron-right"></i><span>Diabetes Care</span></div>
-              <div class="cont-link-depart"><i class="fa-solid fa-circle-chevron-right"></i><span>Pre-natel Care</span></div>
-              <div class="cont-link-depart"><i class="fa-solid fa-circle-chevron-right"></i><span>Ultrasound EchoCardiogram</span></div>
+              <div v-for="link in links" 
+              :key="link.name" 
+              class="cont-link-depart"
+              @click="link.active = (!link.active)">
+              <div class="d-flex align-items-center">
+                <i class="fa-solid"
+                :class="[link.active ? 'fa-circle-chevron-right': 'fa-circle-chevron-left']"></i>
+                <span>{{link.name}}</span>
+              </div>
+                <div class="under-links" :class="[link.active ? 'd-none' : '']">
+                  <span v-for="(item, i) in link.details" :key="i">{{item}}</span>
+                </div> 
+              </div>
             </div>
             <BaseButton text="VIEW OUR DEPARTMENTS" type="base-black"/>
           </div>
@@ -53,7 +61,10 @@ export default {
   name: 'TheFooter',
   components: {
     BaseButton,
-}
+  },
+  props: {
+    links: Array,
+  },
 }
 </script>
 
@@ -92,8 +103,6 @@ export default {
         margin-right: 10px;
       }
     } .cont-link-depart {
-      display: flex;
-      align-items: center;
       margin-bottom: 10px;
       cursor: pointer;
       i {
@@ -103,6 +112,11 @@ export default {
       } span {
         font-size: 14px;
         font-weight: 300;
+      } .under-links {
+        margin-left: 35px;
+        span {
+          display: block;
+        }
       }
     }
   .copyright {

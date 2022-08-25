@@ -7,7 +7,7 @@
     :healthServiceCards="healthServiceCards"
     :learnMoreCards="learnMoreCards"
     />
-    <TheFooter/>
+    <TheFooter :links="footerLink"/>
   </div>
 </template>
 
@@ -23,6 +23,7 @@ import _avadaHealthCards from './assets/data/_avadaHealthCards';
 import _doctorsCards from './assets/data/_doctorsCards';
 import _healthServiceCards from './assets/data/_healthServiceCards';
 import _learnMoreCards from './assets/data/_learnMoreCards';
+import _footerLink from './assets/data/_footerLink';
 
 export default {
   name: 'App',
@@ -38,6 +39,7 @@ export default {
       doctorsCards: _doctorsCards,
       healthServiceCards: _healthServiceCards,
       learnMoreCards: _learnMoreCards,
+      footerLink: _footerLink,
     }
   }
 }
