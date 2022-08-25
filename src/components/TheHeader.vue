@@ -45,6 +45,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  @import "../assets/scss/vars.scss";
+
   header {
     height: 850px;
     background-image: url(../assets/img/header-image-homepage.jpg);
@@ -68,7 +70,7 @@ export default {
       h2{
         font-weight: 200;
         span{
-          color: #39afbb;
+          color: $primary-color;
         }
       }p {
         margin: 25px 0;

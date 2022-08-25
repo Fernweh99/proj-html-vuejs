@@ -45,4 +45,7 @@ export default {
 
 <style lang="scss">
   @import "./assets/scss/style.scss";
+  img {
+    max-width: 100%;
+  }
 </style>

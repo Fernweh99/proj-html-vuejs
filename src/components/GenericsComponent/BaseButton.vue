@@ -37,11 +37,12 @@ export default {
 </script>
 
 <style lang="scss">
+  @import "../../assets/scss/vars.scss";
   button {
     padding: 10px 30px;
     &.general{
       text-transform: uppercase;
-      background-color: #3cb0c0;
+      background-color: $primary-color;
       color: white;
       border-radius: 2px;
       border: 1px solid rgb(116, 115, 115);
