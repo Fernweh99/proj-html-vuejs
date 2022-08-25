@@ -7,7 +7,7 @@
       :class="[{'bg-aqua' : (card.bgcolor === 'aqua')},{'bg-cyan' : (card.bgcolor === 'cyan')},{'bg-blue' : (card.bgcolor === 'blue')}]"
       >
         <h3 class="h5">{{card.title}}</h3>
-        <img class="my-2" :src="card.source" alt="">
+        <img class="my-2" :src="card.source" alt="wave-divider">
         <p>{{ card.text }}</p>
         <BaseButton 
         text="Learn More"

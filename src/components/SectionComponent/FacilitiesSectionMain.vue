@@ -12,7 +12,7 @@
       <div class="row justify-content-center text-center">
         <div class="col-3">
           <a href="#">
-            <img src="../../assets/img/play-icon.png" alt="">
+            <img src="../../assets/img/play-icon.png" alt="button-play">
           </a>
          </div>
       </div>

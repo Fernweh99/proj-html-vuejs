@@ -1,6 +1,6 @@
 <template>
   <div class="cs_card">
-    <img :src="image" alt="">
+    <img :src="image" :alt="'doctor-'+ name">
     <div class="p-5">
       <h3>{{ name }}</h3>
       <h4>{{ role }}</h4>

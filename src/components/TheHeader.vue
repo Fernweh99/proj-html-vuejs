@@ -3,12 +3,12 @@
     <div class="container h-100">
       <nav class="row">
         <div class="col">
-          <img src="../assets/img/medical_logo_1x_light.png" alt="">
+          <img src="../assets/img/medical_logo_1x_light.png" alt="main logo">
         </div>
 
         <div class="col">
           <div class="d-flex justify-content-end align-items-center">
-            <a href="#" v-for="link in headerNavbar" 
+            <a :href="'#'+link.href" v-for="link in headerNavbar" 
             :key="link.name">
               <span v-if="link.type==='link'">{{link.name}}</span>
               <BaseButton v-else :text="link.name" type="general"/>

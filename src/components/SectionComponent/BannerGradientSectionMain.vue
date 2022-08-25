@@ -5,7 +5,7 @@
         <div class="col offset-1">
           <div class="row">
             <div v-for="n in 4" :key="n" class="col">
-              <img :src="require(`../../assets/img/client-logos-${n}.png`)" alt="">
+              <img :src="require(`../../assets/img/client-logos-${n}.png`)" alt="background gradient">
             </div>
           </div>
         </div>

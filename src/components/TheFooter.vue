@@ -4,7 +4,7 @@
       <div class="container-fluid">
         <div class="row g-5">
           <div class="col">
-            <img src="../assets/img/medical_logo_1x_dark.png" alt="logo"/>
+            <img src="../assets/img/medical_logo_1x_dark.png" alt="main-logo"/>
             <p class="py-3">
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolemue launti
               totam aperiam, eaque ipsa quae ab illo. Invente veriatis et quasi architecto beatae luptatem

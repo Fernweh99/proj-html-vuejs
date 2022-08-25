@@ -18,14 +18,14 @@
         </div>
 
         <div class="col-3 offset-3">
-          <input type="phone" placeholder="Phone Number">
+          <input type="tel" placeholder="Phone Number">
         </div> 
         <div class="col-3">
           <input type="date" placeholder="Appointment Date">
         </div>
 
         <div class="col-6 offset-3">
-          <textarea name="" id="">How can we help you?*</textarea>
+          <textarea id="desc-appointment">How can we help you?*</textarea>
         </div> 
 
         <div class="col-6 offset-3 _button">
